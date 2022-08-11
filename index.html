@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Add Book to Catalog</h1>
+	
+		<div class="isbn-assist">
+			<h3>ISBN Assist</h3>
+			<p>Use the <a href="https://openlibrary.org/">Open Library</a> database to prepopulate form</p>
+			ISBN: <input type="text" name="a" id="a">
+			<button onclick="isbnAssist(document.getElementById('a').value)">Populate</button><br>
+		</div>
+		<br>
+		<form>
+			Title: <input type="text" name="title" id="title"><br>
+			Year: <input type="text" name="pub-year" id="pub-year"><br>
+			Publisher: <input type="text" name="publisher" id="publisher"><br>
+			ISBN: <input type="text" name="isbn" id="isbn"><br>
+			Book Cover: <input type="url" name="cover" id="cover"><br>
+
+			<br>
+			Summary: <textarea name="summary" id="summary"></textarea><br><br>
+			Author: <input type="text" name="author-first-name" id="author-first-name">
+			<input type="text" name="author-surname" id="author-surname"><br><br>
+			Author Birth Year: <input type="text" name="author-birth-year" id="author-birth-year">
+			Death Year: <input type="text" name="author-death-year" id="author-death-year"><br>
+
+			<button>Submit</button>
+		</form>
+	<p>0679433740</p>
+	
+	
+	<script src="isbn_assist.js"></script>
+
+
+<style>
+	.isbn-assist {
+		border: solid 1px green;
+		padding: 0px 20px 20px 20px;
+	}
+</style>
+	</body>
+</html>
